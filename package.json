@@ -27,6 +27,8 @@
   "scripts": {
     "test": "./node_modules/.bin/mocha",
     "deploy": "./node_modules/.bin/serverless deploy",
+    "remove:cicd": "./node_modules/.bin/serverless remove --stage cicd",
+    "remove:prod": "./node_modules/.bin/serverless remove --stage prod",
     "deploy:cicd": "./node_modules/.bin/serverless deploy --stage cicd",
     "deploy:prod": "./node_modules/.bin/serverless deploy --stage prod"
   }
