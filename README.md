@@ -1,1 +1,2 @@
-# serverless-node-codepipeline
+# serverless-node-simple-codepipeline
+

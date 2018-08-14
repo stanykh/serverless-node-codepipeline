@@ -8,4 +8,10 @@ phases:
       - ./node_modules/.bin/serverless deploy --stage cicd
   post_build:
     commands:
-      - npm run test
+      - echo "Start testing"
+      - |
+        if ./node_modules/.bin/mocha | grep failing; then 
+          echo "Testing has failed"; 
+        else 
+          ./node_modules/.bin/serverless deploy --stage prod; 
+        fi
