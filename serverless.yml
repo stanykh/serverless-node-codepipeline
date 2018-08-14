@@ -1,4 +1,4 @@
-service: aws-node-simple-codepipeline
+service: sls-simple-codepipeline
   
 provider:
   name: aws
