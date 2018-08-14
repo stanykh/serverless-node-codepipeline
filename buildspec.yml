@@ -10,8 +10,4 @@ phases:
     commands:
       - echo "Start testing"
       - |
-        if ./node_modules/.bin/mocha | grep failing; then 
-          echo "Testing has failed"; 
-        else 
-          ./node_modules/.bin/serverless deploy --stage prod; 
-        fi
+        if ./node_modules/.bin/mocha | grep failing; then echo "Testing has failed"; else ./node_modules/.bin/serverless deploy --stage prod; fi
